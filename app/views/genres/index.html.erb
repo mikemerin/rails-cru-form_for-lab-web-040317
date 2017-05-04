@@ -1,0 +1,9 @@
+<h1>All Genres</h1>
+
+<% @genres.each do |genre| %>
+  <div><%= link_to genre.name, genre %></div><br>
+<% end %>
+<br>
+<%= link_to "Create a New Genre", new_genre_path %><br>
+<%= link_to "Show All Artists", artists_path %><br>
+<%= link_to "Show All Songs", songs_path %>
